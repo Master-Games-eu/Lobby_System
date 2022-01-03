@@ -31,7 +31,7 @@ public class Join_Leave implements Listener {
         Player p = e.getPlayer();
         p.setHealth(20.0D);
         p.setFoodLevel(20);
-        p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 99999999, 3));
+        p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 99999999, 2));
         p.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 99999999, 4));
         giveItems(p);
         final List<String> message = config.getStringList("join-motd");
