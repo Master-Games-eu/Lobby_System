@@ -18,17 +18,17 @@ public class Rank implements CommandExecutor {
             Player p = (Player)sender;
             if (args.length == 0) {
                 if (p.hasPermission("mg.rank.helper") || p.hasPermission("mg.rank.builder")) {
-                    p.sendMessage("§b§lRank §8» §7Usage: §b/rank (nick) (rank)");
+                    p.sendMessage("§b§lRank §8» §7Usage: §b§l/rank (nick) (rank)");
                 } else {
                     p.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("no-perms")));
                 }
             }
             if (args.length == 1) {
                 if (p.hasPermission("mg.rank.helper")) {
-                    p.sendMessage("§b§lRank §8» §7Available ranks: §bel.helper, helper, zk.helper, player");
+                    p.sendMessage("§b§lRank §8» §7Available ranks: §b§lel.helper, helper, zk.helper, player");
                 }
                 if (p.hasPermission("mg.rank.builder")) {
-                    p.sendMessage("§b§lRank §8» §7Available ranks: §bel.builder, builder, zk.builder, player");
+                    p.sendMessage("§b§lRank §8» §7Available ranks: §b§lel.builder, builder, zk.builder, player");
                 }
             }
             if (args.length == 2) {
@@ -38,7 +38,7 @@ public class Rank implements CommandExecutor {
                     } else if (args[1].equalsIgnoreCase("player")) {
                         Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + args[0] + " parent set default");
                     } else {
-                        p.sendMessage("§b§lRank §8» §7Available ranks: §bel.helper, helper, zk.helper, player");
+                        p.sendMessage("§b§lRank §8» §7Available ranks: §b§lel.helper, helper, zk.helper, player");
                     }
                 }
                 if (p.hasPermission("mg.rank.builder")) {
@@ -47,7 +47,7 @@ public class Rank implements CommandExecutor {
                     } else if (args[1].equalsIgnoreCase("player")) {
                         Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + args[0] + " parent set default");
                     } else {
-                        p.sendMessage("§b§lRank §8» §7Available ranks: §bel.builder, builder, zk.builder, player");
+                        p.sendMessage("§b§lRank §8» §7Available ranks: §b§lel.builder, builder, zk.builder, player");
                     }
                 }
             }

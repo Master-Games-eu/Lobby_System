@@ -24,7 +24,7 @@ public class Fly implements CommandExecutor, Listener {
         if (command.getName().equalsIgnoreCase("fly")) {
             if (sender instanceof Player) {
                 Player p = (Player)sender;
-                if (p.hasPermission("lobby.fly")) {
+                if (p.hasPermission("mg.fly")) {
                     if (FlyingP.contains(p.getUniqueId().toString())) {
                         p.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("fly-off")));
                         p.setAllowFlight(false);

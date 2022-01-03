@@ -26,7 +26,7 @@ public class Spawn implements CommandExecutor {
                         p.sendMessage("§b§lServer §8» §aSpawn has been set to your position");
                         return false;
                     }
-                    p.sendMessage("§b§lServer §8» §7Usage: §b/setspawn");
+                    p.sendMessage("§b§lServer §8» §7Usage: §b§l/setspawn");
                     return true;
                 }
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("no-perms")));
@@ -54,7 +54,7 @@ public class Spawn implements CommandExecutor {
                         p.teleport(location);
                         return false;
                     }
-                    p.sendMessage("§b§lServer §8» §7Usage: §b/spawn");
+                    p.sendMessage("§b§lServer §8» §7Usage: §b§l/spawn");
                     return true;
                 }
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("no-perms")));
