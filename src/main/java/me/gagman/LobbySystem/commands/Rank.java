@@ -28,7 +28,7 @@ public class Rank implements CommandExecutor {
                     p.sendMessage("§b§lRank §8» §7Available ranks: §b§lel.helper, helper, zk.helper, player");
                 }
                 if (p.hasPermission("mg.rank.builder")) {
-                    p.sendMessage("§b§lRank §8» §7Available ranks: §b§lel.builder, builder, zk.builder, player");
+                    p.sendMessage("§b§lRank §8» §7Available ranks: §b§lel.builder, builder, zk.builder, bnabor, player");
                 }
             }
             if (args.length == 2) {
@@ -44,10 +44,12 @@ public class Rank implements CommandExecutor {
                 if (p.hasPermission("mg.rank.builder")) {
                     if (args[1].equalsIgnoreCase("el.builder") || args[1].equalsIgnoreCase("builder") || args[1].equalsIgnoreCase("zk.builder")) {
                         Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + args[0] + " parent set " + args[1]);
+                    } else if (args[1].equalsIgnoreCase("bnabor")) {
+                        Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + args[0] + " parent addtemp bnabor 3h");
                     } else if (args[1].equalsIgnoreCase("player")) {
                         Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "lp user " + args[0] + " parent set default");
                     } else {
-                        p.sendMessage("§b§lRank §8» §7Available ranks: §b§lel.builder, builder, zk.builder, player");
+                        p.sendMessage("§b§lRank §8» §7Available ranks: §b§lel.builder, builder, zk.builder, bnabor, player");
                     }
                 }
             }
