@@ -1,0 +1,13 @@
+name: LobbySystem
+version: 1.6
+author: realGAGMAN
+main: me.gagman.LobbySystem.Main
+api-version: 1.8.8
+commands:
+  setspawn:
+  spawn:
+  fly:
+  kreditstore:
+  help:
+  coins:
+  rank:

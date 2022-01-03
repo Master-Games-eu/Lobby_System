@@ -1,0 +1,38 @@
+spawn: world;-0.6052223239426497;77.0;0.6179231685823364;-179.99756;2.9999368
+disabledWorlds:
+  - world_nether
+cooldown:
+  player: 6
+  vip: 4
+  premium: 2
+join-motd:
+  - '&c      &b&lMASTER-GAMES.eu'
+  - ''
+  - '&c &f &9&l× &bWeb:  &fwww.master-games.eu'
+  - '&c &f &9&l× &bDiscord: &fdiscord.master-games.eu'
+  - '&c &f &9&l× &bInstagram: &f@mastergames.eu'
+  - '&c &f &9&l× &bTeamSpeak: &fts3.master-games.eu'
+  - ''
+help-cmd:
+  - ''
+  - '&c      &b&lBASIC HELP COMMANDS'
+  - ''
+  - '&c &f &9&l× &b/party &9➟ &fParty commands'
+  - '&c &f &9&l× &b/friend &9➟ &fFriend commands'
+  - '&c &f &9&l× &b/coins &9➟ &fView coins balance'
+  - '&c &f &9&l× &b/coins send &9➟ &fSend coins'
+  - '&c &f &9&l× &b/report &9➟ &fReport player'
+  - '&c &f &9&l× &b/code &9➟ &fActivate VIP'
+  - ''
+  - '&c      &e&lVIP HELP COMMANDS'
+  - ''
+  - '&c &f &6&l× &e/fly &6➟ &fFly on lobbies'
+  - ''
+no-perms: '&b&lServer &8» &cYou don''t have permission to do that!'
+kreditstore: '&b&lServer &8» &7You can buy credits at &bstore.master-games.eu'
+cooldown-message: '&b&lServer &8» &7Wait &b&l%seconds%s &7before sending new message.'
+fly-on: '&b&lLobby &8» &7Fly was &aenabled'
+fly-off: '&b&lLobby &8» &7Fly was &cdisabled'
+master-join: '&b&l*** &d&lMASTER &f%player_name% &7joined to the lobby &b&l***'
+coins-usage: '&b&lServer &8» &7Usage: &b/coins send (player) (amount)'
+reload: '&b&lLobbySystem &8» &7Config reloaded!'
