@@ -32,7 +32,7 @@ public class Join_Leave implements Listener {
         p.setHealth(20.0D);
         p.setFoodLevel(20);
         p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 99999999, 2));
-        p.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 99999999, 4));
+        p.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 99999999, 3));
         giveItems(p);
         final List<String> message = config.getStringList("join-motd");
         (new BukkitRunnable() {
